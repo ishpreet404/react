@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Learning React",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishpreet404/react.git"
+  },
+  "keywords": [],
+  "author": "Ishpreet Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishpreet404/react/issues"
+  },
+  "homepage": "https://github.com/ishpreet404/react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
