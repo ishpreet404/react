@@ -9,3 +9,5 @@ fetching from cdn is not a goodway to use react
 parcel is doing hmr (hot module replacement) 
 it uses a file watching algorithm written in c++
 parcel is caching things up and reduces the build time
+parcel will do image optimization minimization and bundling/compressing 
+tree shaking - removes unused code
