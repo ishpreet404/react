@@ -14,3 +14,5 @@ tree shaking - removes unused code
 
 
 config driven ui 
+key should be assigned whenever using a map function
+never use indexes as the keys
