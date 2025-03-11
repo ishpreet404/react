@@ -1,0 +1,45 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo {
+    width: 200px;
+    height:auto;
+}
+.navbar-items{
+
+    padding: 0px20px;
+}
+.navbar-items > ul{
+    display: flex;
+    list-style: none;
+    font-size: 23px;
+}
+.navbar-items >ul >li {
+    padding: 10px;
+    margin: 10px;
+}
+.res-card{
+    width: 200px;
+    height: 300px;
+    background-color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+
+}
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+   
+}
+.search {
+    padding: 10px;
+}
+.cardimg{
+    width: 100% ;
+}
+.res-cont{
+    display: flex;
+    flex-wrap: wrap;
+}

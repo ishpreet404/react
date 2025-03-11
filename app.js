@@ -1,25 +1,42 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-//JSX is not html in js it is a html like syntax 
-const jsxheading = <h1 className="root" tabIndex="5"> This is a jsx heading</h1>
-const root = ReactDOM.createRoot(document.getElementById("root")); // parcel transpiles this code and browser is unable to understand the code as it runs on ECMAscript6 using babel
-//React Components 
-//Classbases components -OLD
-//Functional components -NEW
-const Title = ()=> (
-    <h1>parsing one compenent block into another</h1>
-);
-const nm = 100;
-const Headingcompenent = ()=> ( // component composition    
-    <div>    
-    <Title/>  
-    {Title()}
-    <Title></Title>
-    {jsxheading} 
-    {/* if a malacious api call is made jsx prevents injection attacks  */}
-    {nm}
-     <h2>functional compenent </h2>
+const Header = () => (
+    <div className="Header">
+        <div className="logo-container">
+        <img className="logo" src="https://www.shutterstock.com/shutterstock/photos/1534626221/display_1500/stock-vector-hand-drawn-isolated-indian-food-icon-color-fill-illustration-of-indian-dish-rice-with-lentils-1534626221.jpg"/>
+        </div>
+        <div className="navbar-items">
+           <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Support</li>
+            <li>Cart</li>
+            </ul> 
+        </div>
+    </div>
+); 
+const Restaurant = () => (
+    <div className="res-card">
+        <img alt="cardlogo" className="cardimg" src="  https://recipesblob.oetker.in/assets/6c0ac2f3ce204d3d9bb1df9709fc06c9/1272x764/shahi-paneer.jpg"/>
+        <h3>Haldiram</h3> 
+        <h4>Shahi Paneer</h4>
+        <h4>4.9 stars</h4>
+        <h4>28 mins</h4>
     </div>
 )
-root.render(<Headingcompenent/>);
-
+const Body = () => (
+    <div className="body">
+        <div className="search">Search</div>
+        <div className="res-cont">
+           <Restaurant/>   <Restaurant/>   <Restaurant/>   <Restaurant/>   <Restaurant/>   <Restaurant/> 
+        </div>
+    </div>
+)
+const Appcompent = () => (
+    <div class="app">
+        <Header></Header>
+        <Body></Body>
+    </div>
+);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Appcompent/>);
