@@ -16,3 +16,9 @@ tree shaking - removes unused code
 config driven ui 
 key should be assigned whenever using a map function
 never use indexes as the keys
+TWO TYPES OF EXPORTS
+DEFAULT 
+NAMED 
+EXPORT (VAR)
+IMPORT {VAR}
+CAN WE USE BOTH????
