@@ -27,3 +27,6 @@ hw
 react hooks
 usestate()
 useffect()
+
+React Fiber virtual dom => representation of actual dom 
+Diff algorithm finds the difference between actual and virtual dom

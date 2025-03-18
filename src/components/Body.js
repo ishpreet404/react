@@ -1,7 +1,7 @@
 import React from "react";
 import Restaurant from "./Restaurant";
 import { useState } from "react";
-
+import reslist from "../utils/mockdata";
 const Body = () => {
     // State variable for the list of restaurants
     const [listofres, setListOfRes] = useState([
@@ -40,7 +40,8 @@ const Body = () => {
                     className="top-btn"
                     onClick={() => {
                         // Update the state with filtered restaurants
-                        setListOfRes(listofres.filter((res) => res.info.avgRating > 4));
+                        setListOfRes(reslist);
+                        // setListOfRes(listofres.filter((res) => res.info.avgRating > 4));
                     }}
                 >
                     Top Rated Restaurant
