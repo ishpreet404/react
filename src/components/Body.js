@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Restaurant from "./Restaurant";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import reslist from "../utils/mockdata";
 const Body = () => {
     // State variable for the list of restaurants
-    const [listofres, setListOfRes] = useState([
+    const [listofres, setListOfRes] = useState([ // array destructuring
         {
             "info": {
                 "id": "831065",
@@ -32,7 +32,14 @@ const Body = () => {
             },
         },
     ]);
-
+    useEffect(()=>{
+        fetchData();
+    },[])
+    const fetchData=async()=>{
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.65420&lng=77.23730&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const json = await data.json();
+        console.log(json);
+    }
     return (
         <div className="body">
             <div className="filter">

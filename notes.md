@@ -30,3 +30,7 @@ useffect()
 
 React Fiber virtual dom => representation of actual dom 
 Diff algorithm finds the difference between actual and virtual dom
+# Monolith
+-Api,ui,auth,sms all in one code 
+# Microservices 
+-Small services combined together form a big app 
