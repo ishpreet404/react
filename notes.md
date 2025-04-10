@@ -34,3 +34,4 @@ Diff algorithm finds the difference between actual and virtual dom
 -Api,ui,auth,sms all in one code 
 # Microservices 
 -Small services combined together form a big app 
+# Switched to Vite from parcel due to hmr issue
