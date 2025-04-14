@@ -51,7 +51,7 @@ const Body = () => {
                         // setListOfRes(listofres.filter((res) => res.info.avgRating > 4));
                     }}
                 >
-                    Top Rated Restaurant
+                    Top Restaurants
                 </button>
             </div>
             <div className="res-cont">
